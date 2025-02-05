@@ -86,3 +86,11 @@ Sett VITE_MOCK_API til "true", da mockes alle api-kall lokalt i browser. Sjekk .
 - `npm i`
 - `npm run dev`
 - Herje i vei
+
+## Deploy til Azure Web App
+- Det du trenger av konfigurasjon i .env 
+- Benytt adapter-node i svelte.config.js:1
+  ` import adapter from '@sveltejs/adapter-node' `
+- `npm run build`
+- Legg til 'package.json'-fil i build-mappen med dette innholdet: `{ "type": "module" }`
+- Rull ut 'build'-mappen til Azure WebApp ressurs 
