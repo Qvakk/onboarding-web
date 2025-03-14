@@ -67,17 +67,29 @@ Litt småskjult - gir deg valg om å logge på for å se statistikk
 ### /stats
 Får state og code fra page-state. Sender over til api, og venter på respons. Om 200 respons følger det med statistikk, og UX-designer har laget masse fine grafer.
 
-## Theme
-/static/theme kan ha forskjellige temaer. Lag ditt eget og benytt VITE_THEME_NAME-variabelen
+### Theme
+/static/theme kan ha forskjellige utseende. Lag ditt eget og benytt VITE_THEME_NAME-attributt
+
+### Knapp for å resette passord
+VITE_PWD_RESET_REDIRECT med "true" gir en mulighet til å videresende brukeren til angitt lokasjon med VITE_PWD_RESET_URL
+Hvis attribute ikke blir lagt til så vil knappen oppføre seg som normal.
+Man kan også fjerne synligheten med knappen med VITE_DISABLE_PWD_RESET = "true"
+
+### Skjule Elev-knappen
+Hvis du ikke vil ha synlig Elev-knapp på forsiden så kan du benytte VITE_DISABLE_ELEV med "true". Når brukeren lander på forsiden så vil brukeren videresendes til "Ansatt"-siden om denne står på.
 
 ## Env variables
 ```bash
-VITE_THEME_NAME="" # Eksempel "vestfold" for vestfold-theme (mappe)
+VITE_THEME_NAME="" # Eksempel "vestfold" (mappenavn) for vestfold-theme
 VITE_ONBOARDING_API_URI="http://localhost:7071/api" # Trengs ikke om mock-api er true
 VITE_ONBOARDING_API_PUBLIC_KEY="skikkeligbrakeysomerpublicallikevelsåikkesåfarlig" # Trengs ikke om mock-api er true
 VITE_MOCK_API="true/false" # Om "true", så mockes alle api-kall 
 VITE_SERVICEDESK_TLF="33 44 55 66"
 VITE_SERVICEDESK_EPOST="servicedesk@fylke.no"
+VITE_DISABLE_ELEV="true"
+VITE_PWD_RESET_REDIRECT="false"
+VITE_PWD_RESET_URL="https://mysignins.microsoft.com"
+VITE_DISABLE_PWD_RESET="false"
 ```
 
 ## Mock-api
@@ -88,3 +100,11 @@ Sett VITE_MOCK_API til "true", da mockes alle api-kall lokalt i browser. Sjekk .
 - `npm i`
 - `npm run dev`
 - Herje i vei
+
+### Publiser til Azure Web App - Nodejs
+
+- Det du trenger av konfigurasjon i .env
+- Benytt adapter-node i svelte.config.js:1 ` import adapter from '@sveltejs/adapter-node' `
+- `npm run build`
+- Legg til 'package.json'-fil i 'build'-mappen med dette innholdet: `{ "type": "module" }`
+- Publiser 'build'-mappen til Azure WebApp. 

@@ -26,7 +26,7 @@
       animation: circle-rotate 1.4s ease-in-out infinite both;
       stroke-dasharray: 80px,200px;
       stroke-dashoffset: 0;
-      stroke: #005260;
+      stroke: var(--spinner-color, #005260);
   }
   @keyframes svg-rotate {
       to {
