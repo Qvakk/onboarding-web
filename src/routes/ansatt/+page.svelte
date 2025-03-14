@@ -8,11 +8,18 @@
 
   let errorMessage = null
   let loading = false
+  let entraPwdReset = import.meta.env.VITE_PWD_RESET_REDIRECT === 'true'
+  let pwdResetUrl = import.meta.env.VITE_PWD_RESET_URL
+  let disablePwdReset = import.meta.env.VITE_DISABLE_PWD_RESET === 'true'
 
   const redirect = async (action) => {
     errorMessage = null
     try {
       loading = action
+      if (entraPwdReset && action === 'resetpassword') {
+        window.location.href = pwdResetUrl
+        return
+      }
       const { loginUrl } = await getIdPortenLoginUrl('ansatt', action)
       loading = false
       window.location.href = loginUrl
@@ -34,22 +41,24 @@
     <CardButton 
       header="Verifiser bruker"
       imgPath={verifiedIcon}
-      imgAlt="Ikon bilde av en nøkkel"
+      imgAlt="Ikon bilde av verifisert"
       gotoPath=""
       paragraph="Krever pålogging med MinID eller BankID"
       boolValue={false}
       loading={loading === 'verifyuser'}
       func={() => redirect('verifyuser')}
     />
-    <CardButton 
-      header="Tilbakestill passord"
-      imgPath={keyIcon}
-      imgAlt="Ikon bilde av en nøkkel"
-      gotoPath=""
-      paragraph="Krever pålogging med MinID eller BankID, deretter vil du få et engangspassord på sms"
-      boolValue={false}
-      loading={loading === 'resetpassword'}
-      func={() => redirect('resetpassword')}
-    />
+    {#if !disablePwdReset}
+      <CardButton 
+        header="Tilbakestill passord"
+        imgPath={keyIcon}
+        imgAlt="Ikon bilde av en nøkkel"
+        gotoPath=""
+        paragraph="Videresender deg til Microsoft - Min-Konto for å resette passord"
+        boolValue={false}
+        loading={loading === 'resetpassword'}
+        func={() => redirect('resetpassword')}
+      />
+    {/if}
   </div>
 </main>

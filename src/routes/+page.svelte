@@ -1,10 +1,18 @@
 <script>
   import CardButton from '$lib/components/CardButton.svelte'
   import { getThemeAsset } from '$lib/themes/theme.config'
+  import { goto } from '$app/navigation'
+  import { onMount } from 'svelte'
 
   const schoolIcon = getThemeAsset('images/school.svg')
   const personIcon = getThemeAsset('images/person.svg')
 
+  onMount(() => {
+    const disableElev = import.meta.env.VITE_DISABLE_ELEV === 'true'
+    if (disableElev) {
+      goto('/ansatt')
+    }
+  })
 </script>
   
   <main>

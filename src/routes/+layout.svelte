@@ -17,7 +17,7 @@
   <link rel="icon" href={theme.assets.favicon} />
   <link rel="stylesheet" href={theme.assets.css}>
 </svelte:head>
-
+<div class="top-banner"></div>
 <div class="topbar">
   <div class="toptop">
     <div>
@@ -25,7 +25,6 @@
     </div>
     <a href="/" title="Gå til forsiden" class="appTitle"><h1>{appTitle}</h1></a>
     <div class="topbarOptions">
-      <button class="link" on:click={logout}><span class="material-symbols-outlined">logout</span>Hjem / Logg ut</button>
       <button class="link" on:click={() => { goto('/help') } }><span class="material-symbols-outlined">help</span>Hjelp</button>
     </div>
   </div>
