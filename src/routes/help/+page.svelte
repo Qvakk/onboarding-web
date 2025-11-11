@@ -1,13 +1,50 @@
-<div>
- <h2>Om verifiseringen.</h2>
- Et steg i utstedtelsen av ny identitet er å verifisere at du er deg :)<br />
- Dette gjør vi med ID-porten, hvor elever kan benytte MinID og ansatte kan benytte BankID.<br />
- <br />
- Følgende steg er nødvendig:<br />
- SMS for aktivering -> Verifisering med ID-porten -> Opprette konto med passord og 2-steg -> Klar til bruk<br />
- <br />
+<script>
+  import { goto } from '$app/navigation';
+  import { t } from 'svelte-i18n';
 
- <h2>Står du fast?</h2>
- Ta kontakt med din IKT-tjeneste på din aktuelle skole om du er elev. <br />
- Ansatte kan ta kontakt .. ..
+  // Update document title when translation loads
+  $: if (typeof document !== 'undefined' && $t('page.help.title')) {
+    document.title = `${$t('page.help.title')} | Brukerkonto`;
+  }
+
+  function goBack() {
+    if (window.history.length > 1) {
+      window.history.back();
+    } else {
+      goto('/');
+    }
+  }
+</script>
+
+<svelte:head>
+</svelte:head>
+
+<div>
+  <h1>{$t('page.help.heading')}</h1>
+  <h2>{$t('help.about_verification')}</h2>
+  {$t('help.about_text')}<br />
+  <br />
+  {$t('help.steps')}<br />
+  {$t('help.steps_list')}<br />
+  <br />
+  <h2>{$t('help.stuck')}</h2>
+  {$t('help.contact_student')}<br />
+  {$t('help.contact_employee')}
+  <br />
+  <button class="back-btn" on:click={goBack}>&larr; {$t('home.title')}</button>
 </div>
+
+<style>
+.back-btn {
+  margin-top: 2em;
+  padding: 0.5em 1.5em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.back-btn:hover {
+  background: var(--button-hover);
+}
+</style>

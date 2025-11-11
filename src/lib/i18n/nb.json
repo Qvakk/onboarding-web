@@ -1,0 +1,401 @@
+{
+  "app": {
+    "title": "Brukerkonto",
+    "offline": "Du er frakoblet. Noen handlinger kan feile.",
+    "back_online": "Tilbake på nett"
+  },
+  "page": {
+    "home": {
+      "title": "Velg brukertype",
+      "heading": "Velg brukertype for å fortsette"
+    },
+    "student": {
+      "title": "Elevinnlogging",
+      "heading": "Innlogging for elever"
+    },
+    "employee": {
+      "title": "Ansattinnlogging",
+      "heading": "Innlogging for ansatte"
+    },
+    "help": {
+      "title": "Hjelp",
+      "heading": "Hjelp og support"
+    },
+    "admin": {
+      "title": "Administrasjon",
+      "heading": "Administratorpanel"
+    },
+    "verifyuser": {
+      "title": "Verifiser bruker",
+      "heading": "Brukerverifisering"
+    },
+    "verifypassword": {
+      "title": "Verifiser passord",
+      "heading": "Passordverifisering"
+    },
+    "success": {
+      "title": "Vellykket",
+      "heading": "Verifisering fullført"
+    },
+    "resetpassword": {
+      "title": "Tilbakestill passord",
+      "heading": "Tilbakestill ditt passord"
+    },
+    "mockidporten": {
+      "title": "Mock ID-porten",
+      "heading": "Test ID-porten innlogging"
+    },
+    "smssent": {
+      "title": "SMS sendt",
+      "heading": "SMS er sendt"
+    },
+    "stats": {
+      "title": "Statistikk",
+      "heading": "Brukerstatistikk"
+    },
+    "debug": {
+      "title": "Debug",
+      "heading": "Debug-informasjon"
+    }
+  },
+  "accessibility": {
+    "skipToContent": "Hopp til hovedinnhold",
+    "mainNavigation": "Hovednavigasjon",
+    "footerNavigation": "Bunnnavigasjon"
+  },
+  "card": {
+    "elev": {
+      "header": "Elev eller lærling",
+      "imgAlt": "Ikonbilde av en elev",
+      "paragraph": "Trykk her hvis du er elev eller lærling"
+    },
+    "ansatt": {
+      "header": "Ansatt",
+      "imgAlt": "Ikonbilde av en ansatt",
+      "paragraph": "Trykk her hvis du er ansatt"
+    }
+  },
+  "elev": {
+    "header": "Verifiser bruker",
+    "imgAlt": "Ikonbilde av verifisert bruker",
+    "paragraph": "Verifiser med ID-porten med MinID eller BankID",
+    "reset_header": "Tilbakestill passord",
+    "reset_imgAlt": "Ikonbilde av nøkkel",
+    "reset_paragraph": "Glemt passord? Trykk her for å tilbakestille."
+  },
+  "ansatt": {
+    "header": "Start verifisering",
+    "imgAlt": "Ikonbilde av verifisert bruker",
+    "paragraph": "Verifiser med ID-porten med MinID eller BankID"
+  },
+  "logo": {
+    "alt": "Fylkeskommunens logo"
+  },
+  "home": {
+    "title": "Gå til forsiden"
+  },
+  "help": {
+    "button": "Hjelp",
+    "about_verification": "Om verifiseringen.",
+    "about_text": "Et steg i utstedelsen av ny identitet er å verifisere at du er deg :) Dette gjør vi med ID-porten, hvor elever kan benytte MinID og ansatte kan benytte BankID.",
+    "steps": "Følgende steg er nødvendig:",
+    "steps_list": "SMS for aktivering -> Verifisering med ID-porten -> Opprette konto med passord og 2-steg -> Klar til bruk",
+    "stuck": "Står du fast?",
+    "contact_student": "Ta kontakt med din IKT-tjeneste på din aktuelle skole om du er elev.",
+    "contact_employee": "Ansatte kan ta kontakt ... .."
+  },
+  "error": {
+    "title": "Oi, noe gikk galt 😩"
+  },
+  "mockidporten": {
+    "title": "MOCK IDPORTEN",
+    "button": "Lat som du logger på ID-porten",
+    "info": "Ingen data vil bli hentet/sendt, dette skjer bare lokalt i nettleseren din"
+  },
+  "success": {
+    "verifying_login": "Verifiserer innlogging",
+    "still_verifying_login": "Verifiserer fortsatt innlogging",
+    "hello": "Hei!",
+    "username": "Brukernavn",
+    "account_ready": "Kontoen din er nå klar til bruk",
+    "account_security_tip": "Tips: Senere kan du besøke myaccount.microsoft.com for å legge til påloggingsmetoder.",
+    "to_home": "Til startsiden",
+    "redirecting_in": "Videresender om",
+    "start_journey": "Start din reise"
+  },
+  "timeline": {
+    "start": "Start",
+    "idporten": "Identifisering",
+    "account": "Din konto",
+    "verified": "Verifisert"
+  },
+  "verifyuser": {
+    "copy": "Kopier",
+    "retry": "Prøv igjen",
+    "verifying_login": "Verifiserer innlogging",
+    "try_again": "Prøv igjen",
+    "back_to_home": "Til startsiden",
+    "dialog_reset_mfa": {
+      "title": "Tilbakestill MFA-metoder",
+      "confirm": "Fortsett",
+      "cancel": "Avbryt",
+      "body": "Dette vil fjerne alle dine nåværende MFA-metoder (autentikator-app-registreringer, telefonfaktorer, FIDO-nøkler osv.) slik at du kan konfigurere dem på nytt. Fortsette?"
+    },
+    "dialog_setup_mfa": {
+      "title": "Konfigurer MFA-metoder",
+      "confirm": "Fortsett",
+      "cancel": "Avbryt",
+      "body": "Du må konfigurere multifaktor-autentisering (MFA) for å fullføre kontopprettelsen. Dette inkluderer å sette opp autentikator-app, telefonfaktorer eller andre sikkerhetsmethoder. Fortsette?"
+    },
+    "dialog_mfa_info": {
+      "title": "Eksisterende konto - MFA-oppsett kreves",
+      "confirm": "Fortsett til pålogging",
+      "cancel": "Avbryt",
+      "body": "Du har en eksisterende konto og vi må sette opp multifaktor-autentisering (MFA). Vi trenger at du logger inn med kontoen din med ferske legitimasjon for å fortsette med MFA-konfigurasjonen."
+    },
+    "dialog_mfa_confirm": {
+      "title": "Bekreft sletting av MFA-metoder",
+      "confirm": "Fortsett med sletting",
+      "cancel": "Avbryt",
+      "body": "Vi er i ferd med å slette dine eksisterende MFA-metoder (autentikator-app-registreringer, telefonfaktorer, FIDO-nøkler, osv.) slik at du kan sette opp nye. Denne handlingen kan ikke angres."
+    },
+    "dialog_mfa_success": {
+      "title": "MFA-metoder fjernet",
+      "confirm": "Fortsett til oppsett",
+      "cancel": "Avbryt",
+      "body": "Dine eksisterende MFA-metoder har blitt fjernet.",
+      "reminder_title": "Viktig påminnelse:",
+      "reminder_body": "Husk å slette de gamle oppføringene fra Microsoft Authenticator-appen din og eventuelle andre autentikator-apper eller enheter du brukte.",
+      "next": "Vi vil nå omdirigere deg for å sette opp dine nye MFA-metoder med ferske legitimasjon."
+    },
+    "dialog_password_success": {
+      "title": "Passord satt!",
+      "confirm": "Fortsett til MFA-oppsett",
+      "message": "Passordet ditt er lagret!",
+      "next_step": "Nå blir du omdirigert for å sette opp tofaktorautentisering (MFA):",
+      "next_step_short": "Du vil nå bli omdirigert for å sette opp MFA (tofaktorautentisering)",
+      "step1": "Logg inn med brukernavnet ditt og passordet du nettopp opprettet",
+      "step2": "Sett opp Microsoft Authenticator eller en annen MFA-metode",
+      "step3": "Fullfør kontooppsettet",
+      "username_label": "Ditt brukernavn:",
+      "password_label": "Ditt passord:",
+      "password_hint": "Passordet du nettopp opprettet",
+      "auto_redirect": "Omdirigerer automatisk om {seconds} sekunder...",
+      "click_to_continue": "Klikk Fortsett for å fortsette nå"
+    },
+    "dialog_phone": {
+      "confirm_send": "Send",
+      "confirm_continue": "Fortsett",
+      "cancel": "Avbryt",
+      "body_send": "Vi har hentet dette nummeret <strong>{phone}</strong> fra KRR.<br>Vi bruker dette nummeret.<br><br>Hvis feil nummer, endre nummeret i Kontakt- og Reservasjonsregisteret (KRR) med \"Endre nummer\". Prøv på nytt fra begynnelsen etter oppdateringen.",
+      "body_enter": "Skriv inn nytt mobilnummer inkludert landskode (eksempel: +4790012345).",
+      "body_validate": "Skriv inn 6-sifret kode sendt på SMS for å validere det nye nummeret.",
+      "krr_update_notice": "Vi oppdaterer Kontakt- og reservasjonsregisteret med dette nye nummeret.",
+      "send_code": "Send kode",
+      "resend_code": "Send ny kode",
+      "code_sent_hint": "Send ny kode hvis du ikke mottar den innen 3 minutter.",
+      "validate": "Valider"
+    },
+    "dialog_phone_title": {
+      "send": "Send midlertidig passord",
+      "enter": "Endre telefonnummer",
+      "validate": "Valider nytt nummer"
+    },
+    "dialog_phone_confirm_title": "Bekreft telefonnummer",
+    "dialog_phone_confirm_button": "Bekreft",
+    "dialog_phone_confirm_body": "Vi fikk dette fra KRR:<br><br><strong>{phone}</strong><br><br>Hvis feil nummer.<br>Endre informasjonen din i Kontakt- og Reservasjonsregisteret (KRR). Etter endringen må du starte på nytt igjen slik at vi kan få det nye nummeret.",
+    "dialog_phone_confirm_change": "Endre",
+    "sms_creating_message": "Vi kommer til å lage et midlertidig passord og sende det til deg.<br><br><strong>{phone}</strong>",
+    "invalid_phone": "Ugyldig telefonnummer-format.",
+    "invalid_code": "Ugyldig kode",
+    "no_number": "Ingen nummer oppgitt",
+    "no_phone_available": "Ingen telefonnummer tilgjengelig. Vennligst endre telefonnummer for å fortsette.",
+    "use_current_number": "Bruk nåværende nummer",
+    "change_number": "Endre nummer",
+    "update_source": "Oppdater kilde",
+    "update_phone": "Oppdater telefon",
+    "back": "Tilbake",
+    "sms_sending_redirect": "Genererer passord og sender det til deg.<br>Omdirigerer deg til kontoen din...",
+    "sms_generating_progress": "Genererer passord og sender....",
+    "sending_code_wait": "Sender 6-sifret kode til det nye nummeret...",
+    "validating_code": "Validerer kode...",
+    "code_valid": "Kode verifisert",
+    "code_invalid_try": "Ugyldig kode, prøv igjen",
+    "mfa_reset_wait": "Forbereder - vennligst vent",
+    "mfa_login_wait": "Omdirigerer til pålogging...",
+    "mfa_deleting": "Sletter MFA-metoder...",
+    "mfa_setup_wait": "Omdirigerer til MFA-oppsett...",
+    "mfa_reset_deleting": "Keep calm... deleting methods...",
+    "mfa_reset_success_title": "MFA-metoder slettet",
+    "mfa_reset_success_message": "Dine MFA-metoder har blitt fjernet fra kontoen din.",
+    "mfa_continue_button": "Fortsett",
+    "mfa_pre_delete_title": "Forbered sletting av MFA",
+    "mfa_pre_delete_message": "Neste trinn vil slette tilgjengelige metoder",
+    "mfa_pre_delete_notice": "Når du trykker Fortsett starter slettingen.",
+    "mfa_post_delete_message": "Alle metoder er slettet. Husk også å slette kontoen din fra Microsoft Authenticator-appen for å unngå konflikter. Fortsett for å sette opp nye.",
+    "mfa_methods_deleted": "Metoder slettet",
+    "mfa_continue_to_validation": "Fortsett til ny MFA-oppsett",
+    "mfa_start_delete_confirm": "Start sletting",
+    "mfa_reset_incomplete_title": "MFA-tilbakestilling ufullstendig",
+    "mfa_reset_incomplete_message": "Noen MFA-metoder kunne ikke slettes automatisk.",
+    "mfa_reset_retry_button": "Prøv sletting på nytt",
+    "mfa_reset_admin_required": "Administrator-hjelp kreves",
+    "mfa_reset_admin_message": "Noen metoder krever administrator-rettigheter for å slettes. Vennligst kontakt din IT-administrator.",
+    "mfa_reset_partial_success": "Slettet {removed} av {total} MFA-metoder. {remaining} metoder gjenstår.",
+    "mfa_continue_disabled": "Fortsett-knappen er deaktivert til alle metoder er fjernet.",
+    "mfa_retry_countdown": "Nytt forsøk om {seconds} sekunder...",
+    "mfa_retry_attempt": "Forsøk {current} av {max}",
+    "mfa_max_retries_reached": "Forsøkt {count} ganger. Vennligst kontakt helpdesk for hjelp.",
+    "mfa_contact_helpdesk": "Kontakt Helpdesk",
+    "mfa_fresh_auth_required": "Merk: Du vil bli omdirigert til å starte MFA-tilbakestillingsprosessen på nytt.",
+    "cancelled_message": "Ok. Prøv igjen når du er klar. Du kan lukke dette vinduet.",
+    "dialog_send_password": {
+      "title": "Send midlertidig passord",
+      "body": "Vi sender nå et midlertidig passord på SMS til <strong>{phone}</strong>.",
+      "confirm": "Send SMS"
+    },
+    "phone_missing_title": "Mangler telefonnummer",
+    "phone_missing_explanation": "Vi fant ikke noe nummer i Kontakt- og Reservasjonsregisteret (KRR).<br><br>Vennligst oppdater i KRR, bruk \"Oppdater kilde\" for å komme til siden.<br><br><strong>Etter at du har oppdatert telefonnummeret ditt - start på nytt igjen.</strong>",
+    "reference_id": "Referanse-ID"
+  },
+  "errors": {
+    "offline": "Du er frakoblet. Sjekk tilkoblingen og prøv igjen.",
+    "network": "Nettverksfeil. Prøv igjen.",
+    "too_many_requests": "For mange forespørsler. Vent litt og prøv igjen.",
+    "bad_request": "Det er et problem med informasjonen som ble sendt.",
+    "unauthorized": "Økten din har utløpt. Start på nytt.",
+    "forbidden": "Du har ikke tilgang til å fortsette.",
+    "not_found": "Vi fant ikke det du ba om.",
+    "conflict": "Handlingen kunne ikke fullføres på grunn av en konflikt.",
+    "server_issue": "Vi har en midlertidig feil. Prøv igjen senere.",
+    "generic": "Noe gikk galt. Prøv igjen.",
+    "krr_not_found": "Fant ikke mobilnummer i KRR. Vennligst prøv igjen eller kontakt support.",
+    "krr_service_error": "Midlertidig feil med telefonnummer-tjenesten. Vennligst prøv igjen.",
+    "krr_timeout": "Telefonnummer-tjenesten bruker for lang tid å svare. Vennligst prøv igjen.",
+    "krr_permission": "Ingen tilgang til telefonnummer-tjenesten. Vennligst prøv igjen eller kontakt support.",
+    "sms_timeout": "SMS-sending tok for lang tid. Vennligst prøv igjen.",
+    "sms_failed": "Kunne ikke sende SMS. Vennligst prøv igjen.",
+    "verification_timeout": "Verifikasjon tok for lang tid. Vennligst prøv igjen."
+  },
+  "resetpassord": {
+    "need_help": "Trenger du hjelp?",
+    "back_to_home": "Til startsiden"
+  },
+  "passwordVerification": {
+    "title": "Verifiser og sett ditt passord",
+    "info": "Skriv inn det midlertidige passordet du mottok via SMS, deretter lag ditt eget sikre passord.",
+    "tempPasswordLabel": "Midlertidig passord (fra SMS)",
+    "newPasswordLabel": "Nytt passord",
+    "confirmPasswordLabel": "Bekreft nytt passord",
+    "requirementsTitle": "Passordet må inneholde:",
+    "minLength": "Minst 12 tegn",
+    "lowercase": "Liten bokstav (a-z)",
+    "uppercase": "Stor bokstav (A-Z)",
+    "number": "Tall (0-9)",
+    "specialChar": "Spesialtegn (!@#$%^&*)",
+    "noCommonWords": "Ingen vanlige eller opplagte ord",
+    "backendValidationNote": "Passordet ditt vil også bli sjekket for vanlige ord, mønstre og sekvenser når du sender inn.",
+    "passwordsMatch": "✓ Passordene stemmer",
+    "passwordsDoNotMatch": "Passordene matcher ikke",
+    "submitButton": "Sett passord",
+    "submitting": "Setter passord...",
+    "showPassword": "Vis passord",
+    "hidePassword": "Skjul passord",
+    "errors": {
+      "session_expired": "Sesjonen din har utløpt. Vennligst start prosessen på nytt.",
+      "invalid_temp_password": "Ugyldig midlertidig passord. {attemptsLeft} forsøk gjenstår.",
+      "max_attempts_exceeded": "For mange mislykkede forsøk. Vennligst start prosessen på nytt.",
+      "password_requirements_not_met": "Passordet oppfyller ikke sikkerhetskravene. Vennligst velg et sterkere passord.",
+      "password_cannot_match_temp": "Nytt passord kan ikke være det samme som det midlertidige passordet.",
+      "password_set_failed": "Kunne ikke sette passord. Vennligst prøv igjen.",
+      "missing_fields": "Vennligst fyll ut alle feltene.",
+      "passwords_must_match": "Passordene må være like.",
+      "common_password": "Dette passordet oppfyller ikke sikkerhetskravene. Vennligst velg et sterkere passord.",
+      "sequential_numbers": "Dette passordet oppfyller ikke sikkerhetskravene. Vennligst velg et sterkere passord.",
+      "repeated_characters": "Dette passordet oppfyller ikke sikkerhetskravene. Vennligst velg et sterkere passord."
+    }
+  },
+  "smsSuccess": {
+    "message": "Vi har sendt et midlertidig passord til ditt registrerte mobilnummer."
+  },
+  "language": {
+    "label": "Velg språk"
+  },
+  "admin": {
+    "title": "Administratorpanel",
+    "loginButton": "Logg inn",
+    "loading": "Laster"
+  },
+  "debug": {
+    "tabTitle": "Debuglogg",
+    "loading": "Laster logger",
+    "error": "Feil ved henting av logger",
+    "tryAgain": "Prøv igjen",
+    "searchPlaceholder": "Søk etter correlation ID, bruker, melding...",
+    "logs": "logger",
+    "resultCount": "{count} / {total} {label}",
+    "tableTimestamp": "Tidspunkt",
+    "tableCorrelation": "Correlation ID",
+    "tableLevel": "Nivå",
+    "tableMessage": "Melding",
+    "noLogs": "Ingen logger funnet",
+    "levelInfo": "Info",
+    "levelWarn": "Advarsel",
+    "levelError": "Feil",
+    "timestamp": "Tidspunkt",
+    "correlationId": "Correlation ID",
+    "level": "Nivå",
+    "user": "Bruker",
+    "message": "Melding"
+  },
+  "stats": {
+    "tabTitle": "Statistikk",
+    "loading": "Henter statistikk",
+    "error": "Feil ved henting av statistikk",
+    "tryAgain": "Prøv igjen",
+    "noData": "Ingen data tilgjengelig",
+    "noDataMessage": "Det er ingen verifiserte kontoer å vise ennå.",
+    "downloadCsv": "Last ned CSV-fil",
+    "showingResults": "Viser kun 200 oppføringer",
+    "limitedDisplay": "(begrenset til {limit} for visning - last ned CSV for alle)",
+    "filterAll": "Alle",
+    "filterStudent": "Elev",
+    "filterEmployee": "Ansatt",
+    "filterAllFlows": "Alle flyter",
+    "filterNewAccount": "Ny konto",
+    "filterExistingAccount": "Eksisterende konto",
+    "chartAccountType": "Kontotype",
+    "chartDepartment": "Avdeling - Top 10",
+    "chartCompany": "Bedrift - Top 10",
+    "chartTimeline": "Antall i tid (60 dager)",
+    "tableDate": "Dato",
+    "tableAccountType": "Kontotype",
+    "tableFlow": "Flyt",
+    "tableCompany": "Bedrift",
+    "tableDepartment": "Avdeling",
+    "tableStatus": "Status",
+    "tableIdPorten": "ID-porten",
+    "flowNew": "Ny",
+    "flowExisting": "Eksisterende",
+    "unknownValue": "Ukjent",
+    "accountCount": "Antall",
+    "csvConfirmTitle": "Bekreft nedlasting av sensitiv data",
+    "csvConfirmWarning": "Du er i ferd med å laste ned en fil med persondata.",
+    "csvConfirmPoint1": "Filen inneholder statistikkdata som kan identifisere brukere",
+    "csvConfirmPoint2": "Nedlastingen vil bli logget i systemet",
+    "csvConfirmPoint3": "Du er ansvarlig for å håndtere data i henhold til GDPR",
+    "csvConfirmPoint4": "Filen skal ikke deles med uautoriserte personer",
+    "csvConfirmRecords": "poster vil bli eksportert",
+    "csvConfirmCancel": "Avbryt",
+    "csvConfirmDownload": "Last ned",
+    "csvCooldown": "Vennligst vent {seconds} sekunder før du laster ned igjen",
+    "csvRateLimitExceeded": "Nedlastingsgrense nådd for denne økten. Vennligst logg inn på nytt for å fortsette"
+  },
+  "common": {
+    "error": "Oi, noe gikk galt 😩",
+    "backToAdmin": "Tilbake til admin"
+  },
+  "entravalidationcallback": {
+    "redirecting": "Videresender ... vennligst vent ..."
+  }
+}

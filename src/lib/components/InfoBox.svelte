@@ -1,11 +1,13 @@
 <script>
     // Props
-    export let title
+    export let title = ''
     export let open = false
+    // Allow optional type for styling compatibility (ignored if not used)
+    export let type = null
 
 </script>
 
-<div class="infoBox">
+<div class="infoBox" data-type={type || undefined}>
     <button class="title" on:click={() => { open = !open } }><span class="material-symbols-outlined">{open ? 'keyboard_arrow_down' : 'chevron_right'}</span><strong>{title}</strong></button>
     {#if open}
         <div class="content">

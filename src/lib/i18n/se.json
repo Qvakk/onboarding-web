@@ -1,0 +1,390 @@
+{
+  "app": {
+    "title": "Geavaheaddjikonto",
+    "offline": "Don leat olggobealde. Muhtin doaibmat sáhttet heaittit.",
+    "back_online": "Ruovttoluotta interneahtii"
+  },
+  "page": {
+    "home": {
+      "title": "Vállje geavaheaddjitiipa",
+      "heading": "Vállje geavaheaddjitiipa joatkkit"
+    },
+    "student": {
+      "title": "Oahppiinnloggen",
+      "heading": "Innloggen oahppiide"
+    },
+    "employee": {
+      "title": "Bargiinnloggen",
+      "heading": "Innloggen bargiide"
+    },
+    "help": {
+      "title": "Veahkki",
+      "heading": "Veahkki ja doarjja"
+    },
+    "admin": {
+      "title": "Administreren",
+      "heading": "Administratorpaneala"
+    },
+    "verifyuser": {
+      "title": "Duođaštit geavaheaddji",
+      "heading": "Geavaheaddjiduođaštus"
+    },
+    "verifypassword": {
+      "title": "Duođaštit beassansátni",
+      "heading": "Beassansátniduođaštus"
+    },
+    "success": {
+      "title": "Lihkostuvvan",
+      "heading": "Duođaštus geargan"
+    },
+    "resetpassword": {
+      "title": "Bija ođđa beassansátni",
+      "heading": "Bija du ođđa beassansátni"
+    },
+    "mockidporten": {
+      "title": "Mock ID-portála",
+      "heading": "Geahččal ID-portála innloggema"
+    },
+    "smssent": {
+      "title": "SMS sáddejuvvon",
+      "heading": "SMS lea sáddejuvvon"
+    },
+    "stats": {
+      "title": "Statistihkka",
+      "heading": "Geavaheaddjistatistihkka"
+    },
+    "debug": {
+      "title": "Debug",
+      "heading": "Debug-dieđut"
+    }
+  },
+  "accessibility": {
+    "skipToContent": "Báhčán váldosisdollui",
+    "mainNavigation": "Váldonavigeren",
+    "footerNavigation": "Vuollenavigeren"
+  },
+  "card": {
+    "elev": {
+      "header": "Oahppi dahje oahppin",
+      "imgAlt": "Govva oahppis",
+      "paragraph": "Buktan dása jus don leat oahppi dahje oahppin"
+    },
+    "ansatt": {
+      "header": "Bargit",
+      "imgAlt": "Govva bargis",
+      "paragraph": "Buktan dása jus don leat bargit"
+    }
+  },
+  "elev": {
+    "header": "Duođaštit geavaheaddji",
+    "imgAlt": "Govva duođaštuvvon geavaheaddjis",
+    "paragraph": "Duođaštit ID-portála bokte MinID dahje BankID",
+    "reset_header": "Bija ođđa beassansátni",
+    "reset_imgAlt": "Govva čoavdda",
+    "reset_paragraph": "Leat go beassansátni vajálduvvon? Buktan dása jus háliidat ođđasit heivehuvvot."
+  },
+  "ansatt": {
+    "header": "Álggahit duođaštima",
+    "imgAlt": "Govva duođaštuvvon geavaheaddjis",
+    "paragraph": "Duođaštit ID-portála bokte MinID dahje BankID"
+  },
+  "logo": {
+    "alt": "Fylkkagielda logo"
+  },
+  "home": {
+    "title": "Mana ruovttoluotta"
+  },
+  "help": {
+    "button": "Veahkki",
+    "about_verification": "Duođaštus birra.",
+    "about_text": "Oassi ođđa identitehta addimis lea duođaštit ahte don leat don. Dát dáhpáhuvvá ID-portála bokte, gos oahppit sáhttet geavahit MinID ja bargit sáhttet geavahit BankID.",
+    "steps": "Dát leat dárbbašlaš lávkki:",
+    "steps_list": "SMS aktiveremiin -> Duođaštus ID-portála bokte -> Ráhkat konto beassansániin ja guokte lávkkiin -> Ráhkis geavahan",
+    "stuck": "Leat go gitta?",
+    "contact_student": "Váldde oktavuođa iežat IKT-bálvalussii skuvllas jus don leat oahppi.",
+    "contact_employee": "Bargit sáhttet váldit oktavuođa ... .."
+  },
+  "error": {
+    "title": "Oaidnale, muhto muhtun boaluidii manai boastut 😩"
+  },
+  "mockidporten": {
+    "title": "MOCK ID-PORTÁLA",
+    "button": "Heivet ahte loggat ID-portála",
+    "info": "Ii datta datad, dát dáhpáhuvvo duinna iežat browsaras"
+  },
+  "success": {
+    "verifying_login": "Duođaštit sisačáliheapmi",
+    "still_verifying_login": "Duođaštit ain sisačáliheapmi",
+    "hello": "Bures!",
+    "username": "Geavaheaddjenamma",
+    "account_ready": "Du kontu lea dál ráhkis geavahan",
+    "account_security_tip": "Heivehus: Maŋŋel sáhtát mana myaccount.microsoft.com:iide lasihit sisačáliheapmi vuogiid.",
+    "to_home": "Ruovttoluotta",
+    "redirecting_in": "Sádden viidáseappot",
+    "start_journey": "Álggat du mátkki"
+  },
+  "timeline": {
+    "start": "Álggaheapmi",
+    "idporten": "Identifisereapmi",
+    "account": "Du kontu",
+    "verified": "Duođaiduvvon"
+  },
+  "verifyuser": {
+    "copy": "Kopiere",
+    "retry": "Geahččal fas",
+    "verifying_login": "Duođaštit sisačáliheapmi",
+    "try_again": "Geahččal ođđasit",
+    "back_to_home": "Ruovttoluotta",
+    "dialog_reset_mfa": {
+      "title": "Heivet ođđasis MFA-doaimmaid",
+      "confirm": "Joatkke",
+      "cancel": "Sihko",
+      "body": "Dát sihkkarasta buot dálá MFA-doaimmat (autentikáhtor-app registreren, telefovdnafaktorat, FIDO-čoavddat, jsv.) nu ahte sáhtát seammás heivehit ođđasit. Háliidatgo joatkit?"
+    },
+    "dialog_setup_mfa": {
+      "title": "Heivehit MFA-doaimmaid",
+      "confirm": "Joatkke",
+      "cancel": "Sihko",
+      "body": "Fertet heivehit ollu-faktor-autentiserema (MFA) jus háliidat olahit kontohuksen. Dasa gullá autentikáhtor-applikaš́uvnna, telefovdnafaktoraid dahje eará sihkkaruššanguovluid heiveheapmi. Háliidatgo joatkit?"
+    },
+    "dialog_mfa_info": {
+      "title": "Eksisterejeaddji konto - MFA-heiveheapmi dárbbašuvvo",
+      "confirm": "Joatkke sisačálihemii",
+      "cancel": "Sihko",
+      "body": "Dus lea eksisterejeaddji konto ja mii fertet heivehit ollu-faktor-autentiserema (MFA). Dárbbašat ahte don sisačálihit du kontoin ođđa duođaštusaiguin jus háliidat joatkit MFA-konfigurašuvnnain."
+    },
+    "dialog_mfa_confirm": {
+      "title": "Duođaštit MFA-doaimmaid sihkkarastanr",
+      "confirm": "Joatkke sihkkarastaniin",
+      "cancel": "Sihko",
+      "body": "Mii leat áiggun sihkkarastit du eksisterejeaddji MFA-doaimmaid (autentikáhtor-app registreren, telefovdnafaktorat, FIDO-čoavddat, jsv.) nu ahte sáhtát heivehit ođđaid. Dán barggu ii sáhte máhcahit."
+    },
+    "dialog_mfa_success": {
+      "title": "MFA-doaimmat sihkkarastuvvojedje",
+      "confirm": "Joatkke heivehemii",
+      "cancel": "Sihko",
+      "body": "Du eksisterejeaddji MFA-doaimmat leat sihkkarastuvvojan.",
+      "reminder_title": "Dehálaš muituhus:",
+      "reminder_body": "Muittát sihkkarastit boares merkošumit Microsoft Authenticator-applikaš́uvnnas ja eará autentikáhtor-applikaš́uvnnain dahje ovttadagain maid geavahit.",
+      "next": "Mii dál stivrret du heivehit ođđa MFA-doaimmaiddu ođa duođaštusa iguin."
+    },
+    "dialog_password_success": {
+      "title": "Beassansátni biddjojuvvon!",
+      "confirm": "Joatkke MFA-heivehemii",
+      "message": "Du beassansátni lea vurkejuvvon!",
+      "next_step": "Dál stivrrojuvvot heivehit guokte-dási duođaštusa (MFA):",
+      "next_step_short": "Don áččudat dál ruoktot ášáegoahtit MFA (guokte-dási duođaštusa)",
+      "step1": "Logát sisa du geavaheddjenamaiguin ja beassansátniin maid áibbas hukse",
+      "step2": "Heivehe Microsoft Authenticator dahje eara MFA-vági",
+      "step3": "Fullpost kontu-heivehusa",
+      "username_label": "Du geavaheaddjinamá:",
+      "password_label": "Du beassansátni:",
+      "password_hint": "Beassansátni maid áibbas hukse",
+      "auto_redirect": "Automáhtalaččat stivrrojuvvo {seconds} sekundda maŋŋá...",
+      "click_to_continue": "Coahkal Joatkke joatkkahit dál"
+    },
+    "dialog_phone": {
+      "confirm_send": "Sádde",
+      "confirm_continue": "Joatkke",
+      "cancel": "Sihko",
+      "body_send": "Mii leat ožžon dán nummára <strong>{phone}</strong> KRR:s.<br>Mii geavahit dán nummára.<br><br>Jos boastto nummár, rievdat nummára Kontakt- ja Resermašuvdna-registaris (KRR) \"Rievdat nummára\"-náhkain. Geahččal ođđasit álggahusas ođasmáhttima maŋŋá.",
+      "body_enter": "Čále ođđa mobiilnummára, čálihit riikkakoda maid (ovdamearka: +4790012345).",
+      "body_validate": "Čále 6-nummarlaš koda mii sáddejuvvui SMS:iin vai duođaštit ođđa nummára.",
+      "krr_update_notice": "Mii ođasmat Kontakt- ja Resermašuvdna-registera dán ođđa nummáriin.",
+      "send_code": "Sádde koda",
+      "resend_code": "Sádde ođđa koda",
+      "code_sent_hint": "Sádde ođđa koda jus ii boađe 3 minuhtta siste.",
+      "validate": "Duođaštit"
+    },
+    "dialog_phone_title": {
+      "send": "Sádde áibbas beassansáni",
+      "enter": "Rievdat telefovnna nummára",
+      "validate": "Duođaštit ođđa nummára"
+    },
+    "dialog_phone_confirm_title": "Duođaštit telefovnnummára",
+    "dialog_phone_confirm_button": "Duođaštit",
+    "dialog_phone_confirm_body": "Mii oaččuimet dán KRR:as:<br><br><strong>{phone}</strong><br><br>Jus boastut nummár.<br>Rievdat dieđuid du Kontakt- ja Resermašuvdna-registaris (KRR). Rievdadusa maŋŋá fertet álggat ođđasit fas nu ahte mii sáhttit oažžut ođđa nummára.",
+    "dialog_phone_confirm_change": "Rievdat",
+    "sms_creating_message": "Mii áigut ráhkadit áibbas beassansáni ja sáddet dan dutnje.<br><br><strong>{phone}</strong>",
+    "invalid_phone": "Galgá vuoruhit nummár-formáhtta.",
+    "invalid_code": "Galgá vuoruhit koda",
+    "no_number": "Eai leat nummár lasihan",
+    "no_phone_available": "Eai leat telefovnnummár olu. Rievdat telefovnnummára joatkašit dihte.",
+    "use_current_number": "Geavat dálá nummára",
+    "change_number": "Rievdat nummára",
+    "update_source": "Ođasměhttit gálddu",
+    "update_phone": "Ođasměhttit telefovnna",
+    "back": "Maŋit",
+    "sms_sending_redirect": "Ráhkada beassansáni ja sáddá dutnje.<br>Stivrá du du kontuii...",
+    "sms_generating_progress": "Ráhkada beassansáni ja sáddá....",
+    "sending_code_wait": "Sádde 6-nummarlaš koda ođđa nummárii...",
+    "validating_code": "Duođaštin koda...",
+    "code_valid": "Koda duođaiduvvon",
+    "code_invalid_try": "Galgá vuoruhit koda, geahččal ođđasit",
+    "mfa_reset_wait": "Heiveheamit - vuordde fargga",
+    "mfa_login_wait": "Sádde sisačálihemii...",
+    "mfa_deleting": "Sihko MFA-doaimmaid...",
+    "mfa_setup_wait": "Sádde MFA-heivehemii...",
+    "mfa_reset_deleting": "Keep calm... deleting methods...",
+    "mfa_reset_success_title": "MFA-doaimmat sihkojuvvon",
+    "mfa_reset_success_message": "Du MFA-doaimmat leat váldon eret du kontust.",
+    "mfa_continue_button": "Joatkke",
+    "mfa_pre_delete_title": "Heivet MFA sihkkoheami",
+    "mfa_pre_delete_message": "Boahtte lávki sihko ollislaš doaimmaid",
+    "mfa_pre_delete_notice": "Go roggat Joatkke, sihkkoheami álgá.",
+    "mfa_post_delete_message": "Buot doaimmat leat sihkojuvvon. Muitte maid sihkkojit konto Microsoft Authenticator-appas vai bisuhat gažaldagaid. Joatkke vai heivehit ođđa.",
+    "mfa_methods_deleted": "Doaimmat sihkojuvvon",
+    "mfa_continue_to_validation": "Joatkke ođđa MFA-heiveheapmái",
+    "mfa_start_delete_confirm": "Álggahit sihkkoheami",
+    "mfa_reset_incomplete_title": "MFA-máhcaheapmi ii leat ollislaš",
+    "mfa_reset_incomplete_message": "Muhtun MFA-doaimmat eai sáhttán sihkojuvvot automáhtalaččat.",
+    "mfa_reset_retry_button": "Geahččal sihkkoheami ođđasit",
+    "mfa_reset_admin_required": "Administrator-veahkki dárbbašuvvo",
+    "mfa_reset_admin_message": "Muhtun doaimmat dárbbaš administrator-vuoigatvuođaid sihkkojuvvot. Váldde oktavuođa IT-administratoriin.",
+    "mfa_reset_partial_success": "Sihkojuvvon {removed} {total} MFA-doaimmain. {remaining} doaimmat báhcet.",
+    "mfa_continue_disabled": "Joatkke-knáppa lea jáhkehuvvon dassážii go buot doaimmat leat váldon eret.",
+    "mfa_retry_countdown": "Ođđa geahččaleapmi {seconds} sekundda...",
+    "mfa_retry_attempt": "Geahččaleapmi {current} {max}:s",
+    "mfa_max_retries_reached": "Geahččalon {count} háve. Váldde oktavuođa helpdesk:in veahkki várás.",
+    "mfa_contact_helpdesk": "Válde oktavuođa Helpdesk:in",
+    "mfa_fresh_auth_required": "Fuomáš: Sáddet ruovttoluotta álggahit MFA-máhcaheami proseassa ođđasit.",
+    "cancelled_message": "Ok. Geahččal fas dan go lea hávkke. Sáhtát giddet dán láse.",
+    "dialog_send_password": {
+      "title": "Sádde áibbas beassansáni",
+      "body": "Sáddejit dál SMS:a mas lea áibbas beassansátni <strong>{phone}</strong>-nummárii.",
+      "confirm": "Sádde SMS"
+    },
+    "phone_missing_title": "Váilu telefovnnummár",
+    "phone_missing_explanation": "Mii eat gávnnan oktage nummára Kontakt- ja Resermašuvdna-registaris (KRR).<br><br>Ođasměhtti KRR:as, geavat \"Ođasměhttit gálddu\" oažžut siidui.<br><br><strong>Maŋŋá go leat ođasměhttán telefovnnummára - álggat ođđasit fas.</strong>",
+    "reference_id": "Referánsa-ID"
+  },
+  "errors": {
+    "offline": "Don leat olggobealde. Čájet oktavuođa ja geahččal fas.",
+    "network": "Fierpmádatmolsun. Geahččal fas.",
+    "too_many_requests": "Nammaheapmi ollu gažaldagain. Vuordde ja geahččal fas.",
+    "bad_request": "Dát diehtu ii lean olámu formáhtas.",
+    "unauthorized": "Du oktavuohta lea mannan eret. Álgge ođđasit.",
+    "forbidden": "Dus ii leat vuoigatvuohta doaimmaide.",
+    "not_found": "Ii gávdnan maid gáibidedje.",
+    "conflict": "Dát doaibma ii sáhttán oktage dola mielde.",
+    "server_issue": "Gierragis molsun. Geahččal maŋŋel.",
+    "generic": "Muhtun boastut dáhpáhuvai. Geahččal fas.",
+    "krr_not_found": "Mobilnummár ii gávdnan KRR:s. Geahččal fas dahje váldde oktavuođa duorgga.",
+    "krr_service_error": "Gaskaboddosaš molsun telefonnummerpalveluin. Geahččal fas.",
+    "krr_timeout": "Telefonnummerpalvelu váldá menddo guhká aikki vástidit. Geahččal fas.",
+    "krr_permission": "Ii beasá telefonnummerpalvelui. Geahččal fas dahje váldde oktavuođa duorgga.",
+    "sms_timeout": "SMS-sáddemin váldá menddo guhká aikki. Geahččal fas.",
+    "sms_failed": "Ii sáhttán sáddet SMS. Geahččal fas.",
+    "verification_timeout": "Duođašteapmi váldá menddo guhká aikki. Geahččal fas."
+  },
+  "resetpassord": {
+    "need_help": "Heavval dušše?",
+    "back_to_home": "Ruovttoluotta"
+  },
+  "passwordVerification": {
+    "title": "Duođašt ja áššit du beassansani",
+    "info": "Čállit gaskaboddasaš beassansani maid ođđiidat SMS bokte, de rahčat iezát sistte beassansani.",
+    "tempPasswordLabel": "Gaskaboddasaš beassansvárrá (SMS:s)",
+    "newPasswordLabel": "Ođđas beassansvárrá",
+    "confirmPasswordLabel": "Nanne ođđas beassansani",
+    "requirementsTitle": "Beassansvárrá fert sisttisdahttit:",
+    "minLength": "Unnimus 12 mearkka",
+    "lowercase": "Unni bustav (a-z)",
+    "uppercase": "Stuora bustav (A-Z)",
+    "number": "Logu (0-9)",
+    "specialChar": "Erešmearka (!@#$%^&*)",
+    "noCommonWords": "Eai dábálaš dahje čielga sániid",
+    "backendValidationNote": "Du beassansátni guorahallojuvvo maid dábálaš sániid, mánsteriid ja čuovávuodaid go sáddet.",
+    "passwordsMatch": "✓ Beassansvárrát deavddet",
+    "passwordsDoNotMatch": "Beassansvárrát eai deavdit",
+    "submitButton": "Áššit beassansani",
+    "submitting": "Áššan beassansani...",
+    "showPassword": "Čájet beassansani",
+    "hidePassword": "Čiegat beassansani",
+    "errors": {
+      "session_expired": "Du seahssan lea gaskohuvvon. Geahččal álggahit proseassa ođđas.",
+      "invalid_temp_password": "Boasttohis gaskaboddasaš beassansvárrá. {attemptsLeft} geahččalan liššega.",
+      "max_attempts_exceeded": "Menddo ollu eahpeođđasa geahččaleamit. Geahččal álggahit proseassa ođđas.",
+      "password_requirements_not_met": "Beassansvárrá ii oza buot gaskkalagidii.",
+      "password_cannot_match_temp": "Ođđas beassansvárrá ii saat leat seamma go gaskaboddasaš beassansvárrá.",
+      "password_set_failed": "Ii sihkkon áššit beassansani. Geahččal fas.",
+      "missing_fields": "Geahččal dávvirit buot suvdáid.",
+      "passwords_must_match": "Beassansvárrát fertejit deavdit.",
+      "common_password": "Dát beassansáni ii doavtta sihkkarvuođagáibádusaid. Vállje nanus beassansáni.",
+      "sequential_numbers": "Dát beassansáni ii doavtta sihkkarvuođagáibádusaid. Vállje nanus beassansáni.",
+      "repeated_characters": "Dát beassansáni ii doavtta sihkkarvuođagáibádusaid. Vállje nanus beassansáni."
+    }
+  },
+  "smsSuccess": {
+    "message": "Mii leat sádden gaskaboddašaš beassansátni du registrerejuvvon mobiltelefovdnanummárii."
+  },
+  "language": {
+    "label": "Vállje giella"
+  },
+  "admin": {
+    "title": "Administráhtorpanela",
+    "loginButton": "Loga sisa",
+    "loading": "Lassána"
+  },
+  "debug": {
+    "tabTitle": "Debuglogg",
+    "loading": "Lassán loggaid",
+    "error": "Meattáhus loggaid viežžamis",
+    "tryAgain": "Geahččal fas",
+    "searchPlaceholder": "Oza correlation ID, geavaheaddji, čujuhus...",
+    "logs": "loggat",
+    "resultCount": "{count} / {total} {label}",
+    "tableTimestamp": "Áigi",
+    "tableCorrelation": "Correlation ID",
+    "tableLevel": "Dássi",
+    "tableMessage": "Čujuhus",
+    "noLogs": "Eai gávdno loggat",
+    "levelInfo": "Dieđut",
+    "levelWarn": "Váruhus",
+    "levelError": "Meattáhus",
+    "timestamp": "Áigi",
+    "correlationId": "Correlation ID",
+    "level": "Dássi",
+    "user": "Geavaheaddji",
+    "message": "Čujuhus"
+  },
+  "stats": {
+    "tabTitle": "Statistihkka",
+    "loading": "Viežžá statistihka",
+    "error": "Meattáhus statistihka viežžamis",
+    "tryAgain": "Geahččal fas",
+    "noData": "Ii dáhta gávdno",
+    "noDataMessage": "Eai leat vel duođaštuvvon kontoat čájehit.",
+    "downloadCsv": "Viečča CSV-fiilla",
+    "showingResults": "Čájeha 200 kontovuođul",
+    "limitedDisplay": "(ráddjejuvvon {limit}:ii čájáhussii - viečča CSV buot várás)",
+    "filterAll": "Buot",
+    "filterStudent": "Oahppi",
+    "filterEmployee": "Bargit",
+    "filterAllFlows": "Buot vuogit",
+    "filterNewAccount": "Ođđa konto",
+    "filterExistingAccount": "Gustojeaddji konto",
+    "chartAccountType": "Kontotiipa",
+    "chartDepartment": "Ossodat - Bajimus 10",
+    "chartCompany": "Fitnodahkka - Bajimus 10",
+    "chartTimeline": "Lohku áiggis (60 beaivvi)",
+    "tableDate": "Beaivi",
+    "tableAccountType": "Kontotiipa",
+    "tableFlow": "Vuohki",
+    "tableCompany": "Fitnodahkka",
+    "tableDepartment": "Ossodat",
+    "tableStatus": "Status",
+    "tableIdPorten": "ID-portála",
+    "flowNew": "Ođđa",
+    "flowExisting": "Gustojeaddji",
+    "unknownValue": "Dovdameahttun",
+    "accountCount": "Lohku"
+  },
+  "common": {
+    "error": "Oi, juoga manai boastut 😩",
+    "backToAdmin": "Ruovttoluotta admin"
+  },
+  "entravalidationcallback": {
+    "redirecting": "Sirdá du ... vuordde ..."
+  }
+}

@@ -1,110 +1,103 @@
-# onboarding-web
-SPA for onboarding peoples
+# Onboarding Web
 
-Onboarding, tilbakestilling av passord, og verifisering av brukere ved bruk av ID-porten. Dette er frontend, bruker BFF for autentisering / autorisering. [Se BFF / onboarding-api her](https://github.com/vestfoldfylke/onboarding-api)
+SvelteKit frontend for user verification and onboarding with ID-porten and Entra ID.
 
-![Alt text](frontend-default.png)
-
-## Flyter
-### Tilbakestill passord
-- Velger aktiver bruker/tilbakestill passord
-- Script spør onboarding-api om å få loginurl til idporten, med action "resetpassword" som query param - redirecter så til id-porten-loginUrl den får av onboard-api
-- Bruker logger på idporten og blir redirected tilbake til /idportencallback
-- /idportencallback sjekker at den har fått med seg state, code, og iss i query params, så sjekker den om action (i state) er "resetpassword", og sender bruker over til /resetpassord sammen med state, code, og iss
-- /resetpassord sender så mottat state, code, iss videre til onboarding-api/ResetPassword - api logger inn brukern, resetter passordet, sender sms ++
-- Bruker klikker så på "Klikk her når du har fått SMS" når hen har fått SMS  - script spør så api om å gå loginurl til password-appreg (EntraID), og redirecter til denne
-- Bruker logger på entraID (password appreg) - blir sendt tilbake til /entrapwdcallback
-- /entrapwdcallback tar i mot state og code, sender over til onboarding-api, logger inn bruker, returnerer upn og logEntryId
-- /entrapwdcallback script ber deretter om loginurl til mfa-appreg (EntraID), og redirecter til denne
-- Bruker logger på entraID (mfa appreg) - blir sendt tilbake til /entramfacallback
-- /entramfacallback tar i mot state og code, sender over til /success
-- /success sender over state og code til onboarding-api, api logger inn brukeren (igjen), returner upn, logEntryId, displayName. Nå er den ferdig
-
-### Aktiver / verifiser bruker
-- Velger aktiver/verifiser bruker
-- Script spør onboarding-api om å få loginurl til idporten, med action "verifyuser" som query param - redirecter så til id-porten-loginUrl den får av onboard-api
-- Bruker logger på idporten og blir redirected tilbake til /idportencallback
-- /idporten callback sjekker at den har fått med seg state, code, og iss i query params, så sjekker den om action (i state) er "verifyuser", og sender bruker over til /verifyuser sammen med state, code, og iss
-- /verifyuser sender så mottat state, code, iss videre til onboarding-api/VerifyUser - api logger inn brukern (idporten), returner logEntryId, upn, displayName
-- /verifyuser script ber deretter om loginurl til mfa-appreg (EntraID), og redirecter til denne
-- Bruker logger på entraID (mfa appreg) - blir sendt tilbake til /entramfacallback
-- /entramfacallback tar i mot state og code, sender over til /success
-- /success sender over state og code til onboarding-api, api logger inn brukeren (igjen), returner upn, logEntryId, displayName. Nå er den ferdig
+## Stack
+- **Framework**: SvelteKit + Vite
+- **Runtime**: Node.js (Azure Web App)
+- **Auth**: ID-porten → Backend API → Entra ID
+- **i18n**: Norwegian Bokmål, Nynorsk, English, Sami
 
 ## Routes
-### /
-Startside, gir deg valget om du er elev eller ansatt
 
-### /elev
-Elevside, gir deg bare et valg - tilbakestill passord. Kan vel utvides om det trengs.
-- Tilbakestill passord spør api om loginUrl til ID-Porten (params: user_type=elev&action=resetpassword) og redirecter deg dit
+| Route | Purpose |
+|-------|---------|
+| `/` | Landing page (student/employee choice) |
+| `/elev` | Student verification flow |
+| `/ansatt` | Employee verification flow |
+| `/idportencallback` | ID-porten callback handler |
+| `/verifyuser` | User verification + phone confirmation |
+| `/validationcallback` | Entra ID validation callback |
+| `/success` | Success page with redirect |
+| `/admin` | Admin login |
+| `/stats` | Statistics dashboard |
 
-### /ansatt
-Ansattside, gir deg valg om å verifisere brukeren din, eller tilbakestille passord
-- Tilbakestill passord spør api loginUrl til ID-Porten (params: user_type=ansatt&action=resetpassword) og redirecter deg dit
+## User Flow
 
-### /idportencallback
-Callbackside for ID-porten redirects. Tar i mot state, code, iss - henter userType og action fra state, og sender videre førhåldsvis til /resetpassord eller /verifyuser (jøss, her har jeg brukt norsk og engelsk om hverandre...)
-
-### /resetpassord
-Får state, code, og iss fra page-state. Sender over til api, og venter på respons. Bruker kan klikke seg videre når hen har fått midlertidig passord på SMS. Da hentes loginUrl for entraPwd enterprise-app, viser ei litta dialog med info om neste steg, og redirecter til loginUrl etter noen sekunder.
-
-### /verifyuser
-Får state, code, og iss fra page-state. Sender over til api, og venter på respons. Ved 200 respons, henter loginUrl for entraMfa-enterprise-app, og redirecter.
-
-### /entrapwdcallback
-Callbackside for entraPwd-enterprise-app redirects. Tar i mot state og code, og sender til api /EntraPwdAuth, om 200 respons, henter loginUrl for entraMfa-enterprise-app og redirecter til respons
-
-### /entramfacallback
-Callbackside for entraMfa-enterprise-app redirects. Tar i mot state og code, sjekker state om den inneholder en action, og sender videre førhåldsvis til /success eller /stats
-
-### /success
-Får state og code fra page-state. Sender over til api, og venter på respons. Om 200 respons er alt good, og kidden viser tommel opp 👍
-
-### /admin
-Litt småskjult - gir deg valg om å logge på for å se statistikk 
-
-### /stats
-Får state og code fra page-state. Sender over til api, og venter på respons. Om 200 respons følger det med statistikk, og UX-designer har laget masse fine grafer.
-
-### Theme
-/static/theme kan ha forskjellige utseende. Lag ditt eget og benytt VITE_THEME_NAME-attributt
-
-### Knapp for å resette passord
-VITE_PWD_RESET_REDIRECT med "true" gir en mulighet til å videresende brukeren til angitt lokasjon med VITE_PWD_RESET_URL
-Hvis attribute ikke blir lagt til så vil knappen oppføre seg som normal.
-Man kan også fjerne synligheten med knappen med VITE_DISABLE_PWD_RESET = "true"
-
-### Skjule Elev-knappen
-Hvis du ikke vil ha synlig Elev-knapp på forsiden så kan du benytte VITE_DISABLE_ELEV med "true". Når brukeren lander på forsiden så vil brukeren videresendes til "Ansatt"-siden om denne står på.
-
-## Env variables
-```bash
-VITE_THEME_NAME="" # Eksempel "vestfold" (mappenavn) for vestfold-theme
-VITE_ONBOARDING_API_URI="http://localhost:7071/api" # Trengs ikke om mock-api er true
-VITE_ONBOARDING_API_PUBLIC_KEY="skikkeligbrakeysomerpublicallikevelsåikkesåfarlig" # Trengs ikke om mock-api er true
-VITE_MOCK_API="true/false" # Om "true", så mockes alle api-kall 
-VITE_SERVICEDESK_TLF="33 44 55 66"
-VITE_SERVICEDESK_EPOST="servicedesk@fylke.no"
-VITE_DISABLE_ELEV="true"
-VITE_PWD_RESET_REDIRECT="false"
-VITE_PWD_RESET_URL="https://mysignins.microsoft.com"
-VITE_DISABLE_PWD_RESET="false"
+```
+Landing → ID-porten → VerifyUser → Phone Confirmation
+                                         ↓
+                  CloudFlow (generate password + SMS)
+                                         ↓
+                   Entra Validation (MFA) → Success
 ```
 
-## Mock-api
-Sett VITE_MOCK_API til "true", da mockes alle api-kall lokalt i browser. Sjekk ./src/lib/useApi.js for å se mocke-data (må være samme format som API returnerer da)
+## Configuration
 
-## Utvikling
-- Klon ned, eller fork, og klon ned
-- `npm i`
-- `npm run dev`
-- Herje i vei
+`.env`:
 
-### Publiser til Azure Web App - Nodejs
+```bash
+VITE_THEME_NAME="frid"
+VITE_DEFAULT_LANGUAGE="browser"
+VITE_ONBOARDING_API_URI="http://localhost:7071/api"
+VITE_ONBOARDING_API_PUBLIC_KEY="your-key"
+VITE_SERVICEDESK_TLF="33 44 55 66"
+VITE_SERVICEDESK_EPOST="servicedesk@fylke.no"
+VITE_DISABLE_ELEV="false"
+VITE_SUCCESS_REDIRECT_ANSATT_URL="https://portal.domain.com"
+VITE_SUCCESS_REDIRECT_ELEV_URL="https://student.domain.com"
+```
 
-- Det du trenger av konfigurasjon i .env
-- Benytt adapter-node i svelte.config.js:1 ` import adapter from '@sveltejs/adapter-node' `
-- `npm run build`
-- Legg til 'package.json'-fil i 'build'-mappen med dette innholdet: `{ "type": "module" }`
-- Publiser 'build'-mappen til Azure WebApp. 
+### Environment Variables
+
+| Variable | Description |
+|----------|-------------|
+| `VITE_THEME_NAME` | Theme folder name in `/static/themes/` |
+| `VITE_DEFAULT_LANGUAGE` | `browser`, `nb`, `nn`, `en`, or `se` |
+| `VITE_ONBOARDING_API_URI` | Backend API base URL |
+| `VITE_ONBOARDING_API_PUBLIC_KEY` | API function key |
+| `VITE_SERVICEDESK_TLF` | Helpdesk phone number |
+| `VITE_SERVICEDESK_EPOST` | Helpdesk email |
+| `VITE_DISABLE_ELEV` | `true` to hide student button |
+| `VITE_SUCCESS_REDIRECT_ANSATT_URL` | Redirect URL for employees |
+| `VITE_SUCCESS_REDIRECT_ELEV_URL` | Redirect URL for students |
+
+## Development
+
+```bash
+npm install
+cp .env.example .env
+# Configure .env
+npm run dev
+```
+
+## Build & Deploy
+
+### Azure Web App (Node.js)
+
+```bash
+# Build
+npm run build
+
+# Add package.json to build folder
+echo '{ "type": "module" }' > build/package.json
+
+# Deploy build folder to Azure Web App
+```
+
+### Adapter Configuration
+
+Use `@sveltejs/adapter-node` in `svelte.config.js`:
+
+```javascript
+import adapter from '@sveltejs/adapter-node'
+```
+
+## Theming
+
+1. Create theme folder in `/static/themes/<theme-name>/`
+2. Set `VITE_THEME_NAME="<theme-name>"`
+3. Include:
+   - `logo.svg`
+   - `styles.css`
+   - `favicon.ico`

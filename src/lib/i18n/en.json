@@ -1,0 +1,377 @@
+{
+  "app": {
+    "title": "User Account",
+    "offline": "You are offline. Some actions may fail.",
+    "back_online": "Back online"
+  },
+  "page": {
+    "home": {
+      "title": "Select User Type",
+      "heading": "Select user type to continue"
+    },
+    "student": {
+      "title": "Student Login",
+      "heading": "Login for students"
+    },
+    "employee": {
+      "title": "Employee Login",
+      "heading": "Login for employees"
+    },
+    "help": {
+      "title": "Help",
+      "heading": "Help and support"
+    },
+    "admin": {
+      "title": "Administration",
+      "heading": "Administrator panel"
+    },
+    "verifyuser": {
+      "title": "Verify User",
+      "heading": "User verification"
+    },
+    "verifypassword": {
+      "title": "Verify Password",
+      "heading": "Password verification"
+    },
+    "success": {
+      "title": "Success",
+      "heading": "Verification complete"
+    },
+    "resetpassword": {
+      "title": "Reset Password",
+      "heading": "Reset your password"
+    },
+    "mockidporten": {
+      "title": "Mock ID-porten",
+      "heading": "Test ID-porten login"
+    },
+    "smssent": {
+      "title": "SMS Sent",
+      "heading": "SMS has been sent"
+    },
+    "stats": {
+      "title": "Statistics",
+      "heading": "User statistics"
+    },
+    "debug": {
+      "title": "Debug",
+      "heading": "Debug information"
+    }
+  },
+  "accessibility": {
+    "skipToContent": "Skip to main content",
+    "mainNavigation": "Main navigation",
+    "footerNavigation": "Footer navigation"
+  },
+  "card": {
+    "elev": {
+      "header": "Student or apprentice",
+      "imgAlt": "Icon image of a student",
+      "paragraph": "Click here if you are a student or apprentice"
+    },
+    "ansatt": {
+      "header": "Employee",
+      "imgAlt": "Icon image of an employee",
+      "paragraph": "Click here if you are an employee"
+    }
+  },
+  "elev": {
+    "header": "Verify user",
+    "imgAlt": "Icon image of verified user",
+    "paragraph": "Verify with ID-porten using MinID or BankID",
+    "reset_header": "Reset password",
+    "reset_imgAlt": "Icon image of key",
+    "reset_paragraph": "Forgot your password? Click here to reset."
+  },
+  "ansatt": {
+    "header": "Start verification",
+    "imgAlt": "Icon image of verified user",
+    "paragraph": "Verify with ID-porten using MinID or BankID"
+  },
+  "logo": {
+    "alt": "County logo"
+  },
+  "home": {
+    "title": "Go to home page"
+  },
+  "help": {
+    "button": "Help",
+    "about_verification": "About verification.",
+    "about_text": "A step in issuing a new identity is to verify that you are you :) This is done with ID-porten, where students can use MinID and employees can use BankID.",
+    "steps": "The following steps are required:",
+    "steps_list": "SMS for activation -> Verification with ID-porten -> Create account with password and 2-step -> Ready to use",
+    "stuck": "Are you stuck?",
+    "contact_student": "Contact your ICT service at your school if you are a student.",
+    "contact_employee": "Employees can contact ... .."
+  },
+  "error": {
+    "title": "Oops, something went wrong 😩"
+  },
+  "mockidporten": {
+    "title": "MOCK IDPORTEN",
+    "button": "Pretend to log in with ID-porten",
+    "info": "No data will be fetched/sent, this only happens locally in your browser"
+  },
+  "success": {
+    "verifying_login": "Verifying login",
+    "still_verifying_login": "Still verifying login",
+    "hello": "Hello!",
+    "username": "Username",
+    "account_ready": "Your account is now ready to use",
+    "account_security_tip": "Tip: Later you can visit myaccount.microsoft.com to add sign-in methods.",
+    "to_home": "To home page"
+  },
+  "timeline": {
+    "start": "Start",
+    "idporten": "Identification",
+    "account": "Your account",
+    "verified": "Verified"
+  },
+  "verifyuser": {
+    "copy": "Copy",
+    "retry": "Retry",
+    "verifying_login": "Verifying login",
+    "try_again": "Try again",
+    "back_to_home": "Back to home",
+    "dialog_reset_mfa": {
+      "title": "Reset MFA methods",
+      "confirm": "Continue",
+      "cancel": "Cancel",
+      "body": "This will remove all your current MFA methods (authenticator app registrations, phone factors, FIDO keys, etc.) so you can reconfigure them. Continue?"
+    },
+    "dialog_setup_mfa": {
+      "title": "Set up MFA methods",
+      "confirm": "Continue",
+      "cancel": "Cancel",
+      "body": "You need to configure multi-factor authentication (MFA) to complete the account setup. This includes setting up authenticator apps, phone factors, or other security methods. Continue?"
+    },
+    "dialog_mfa_info": {
+      "title": "Existing Account - MFA Setup Required",
+      "confirm": "Continue to Login",
+      "cancel": "Cancel",
+      "body": "You have an existing account and we need to set up multi-factor authentication (MFA). We will need you to log in with your account using fresh credentials to proceed with MFA configuration."
+    },
+    "dialog_mfa_confirm": {
+      "title": "Confirm MFA Method Deletion",
+      "confirm": "Continue with Deletion",
+      "cancel": "Cancel",
+      "body": "We are about to delete your existing MFA methods (authenticator app registrations, phone factors, FIDO keys, etc.) so you can set up new ones. This action cannot be undone."
+    },
+    "dialog_mfa_success": {
+      "title": "MFA Methods Removed Successfully",
+      "confirm": "Continue to Setup",
+      "cancel": "Cancel",
+      "body": "Your existing MFA methods have been successfully removed.",
+      "reminder_title": "Important Reminder:",
+      "reminder_body": "Please remember to delete the old entries from your Microsoft Authenticator app and any other authentication apps or devices you were using.",
+      "next": "We will now redirect you to set up your new MFA methods with fresh credentials."
+    },
+    "dialog_password_success": {
+      "title": "Password Set Successfully!",
+      "confirm": "Continue to MFA Setup",
+      "message": "Your password has been successfully set and saved!",
+      "next_step": "Next, you will be redirected to set up multi-factor authentication (MFA):",
+      "next_step_short": "You will now be redirected to set up MFA (multi-factor authentication)",
+      "step1": "Log in with your username and the password you just created",
+      "step2": "Set up Microsoft Authenticator or another MFA method",
+      "step3": "Complete your account setup",
+      "username_label": "Your username:",
+      "password_label": "Your password:",
+      "password_hint": "The password you just created",
+      "auto_redirect": "Auto-redirecting in {seconds} seconds...",
+      "click_to_continue": "Click Continue to proceed now"
+    },
+    "dialog_phone": {
+      "confirm_send": "Send",
+      "confirm_continue": "Continue",
+      "cancel": "Cancel",
+      "body_send": "We got this number <strong>{phone}</strong> from KRR.<br>We will use this number.<br><br>If wrong number, change the number at Kontakt- og Reservasjons-registeret (KRR) with the \"Change number\". Retry from the beginning after the update.",
+      "body_enter": "Enter the new mobile number including country code (example: +4790012345).",
+      "body_validate": "Enter the 6-digit code sent by SMS to validate your new number.",
+      "krr_update_notice": "We are updating the Kontakt- og Reservasjons-registeret with this new number.",
+      "send_code": "Send code",
+      "resend_code": "Send new code",
+      "code_sent_hint": "Resend code if you dont get it after 3 minutes.",
+      "validate": "Validate"
+    },
+    "dialog_phone_title": {
+      "send": "Send temporary password",
+      "enter": "Change phone number",
+      "validate": "Validate new number"
+    },
+    "dialog_phone_confirm_title": "Confirm phone number",
+    "dialog_phone_confirm_button": "Confirm",
+    "dialog_phone_confirm_body": "We got this from KRR:<br><br><strong>{phone}</strong><br><br>If wrong number.<br>Change your information at Kontakt- og Reservasjons-Registeret (KRR). After the change, you must start over again so we can get the new number.",
+    "dialog_phone_confirm_change": "Change",
+    "sms_creating_message": "We are going to create a temporary password and send it to you.<br><br><strong>{phone}</strong>",
+    "invalid_phone": "Invalid phone number format.",
+    "invalid_code": "Invalid code",
+    "no_number": "No number added",
+    "no_phone_available": "No phone number available. Please change your phone number to continue.",
+    "use_current_number": "Use current number",
+    "change_number": "Change number",
+    "update_source": "Update source",
+    "update_phone": "Update phone",
+    "back": "Back",
+    "sms_sending_redirect": "Generating password and sending it to you.<br>Redirecting you to your account...",
+    "sms_generating_progress": "Generating password and sending....",
+    "sending_code_wait": "Sending a 6-digit code to the new number...",
+    "validating_code": "Validating code...",
+    "code_valid": "Code verified",
+    "code_invalid_try": "Code mismatch - try again",
+    "mfa_reset_wait": "Getting ready - please wait",
+    "mfa_login_wait": "Redirecting to login...",
+    "mfa_deleting": "Deleting MFA methods...",
+    "mfa_setup_wait": "Redirecting to MFA setup...",
+    "mfa_reset_deleting": "Keep calm... deleting methods...",
+    "mfa_reset_success_title": "MFA methods deleted",
+    "mfa_reset_success_message": "Your MFA methods have been removed from your account. Continue to setup new method.",
+    "mfa_continue_button": "Continue",
+    "mfa_pre_delete_title": "Prepare MFA deletion",
+    "mfa_pre_delete_message": "Next step will delete the methods available",
+    "mfa_pre_delete_notice": "When you press Continue the deletion starts.",
+    "mfa_post_delete_message": "All methods deleted. Remember to also delete your account from Microsoft Authenticator app to prevent conflicts. Continue to set up new ones.",
+    "mfa_methods_deleted": "Methods deleted",
+    "mfa_continue_to_validation": "Continue to new MFA setup",
+    "mfa_start_delete_confirm": "Start deletion",
+    "mfa_reset_incomplete_title": "MFA reset incomplete",
+    "mfa_reset_incomplete_message": "Some MFA methods could not be deleted automatically.",
+    "mfa_reset_retry_button": "Retry deletion",
+    "mfa_reset_admin_required": "Admin assistance required",
+    "mfa_reset_admin_message": "Some methods require administrator permissions to delete. Please contact your IT administrator.",
+    "mfa_reset_partial_success": "Deleted {removed} of {total} MFA methods. {remaining} methods remain.",
+    "mfa_continue_disabled": "Continue button is disabled until all methods are removed.",
+    "mfa_retry_countdown": "Retry in {seconds} seconds...",
+    "mfa_retry_attempt": "Retry attempt {current} of {max}",
+    "mfa_max_retries_reached": "Attempted {count} times. Please contact helpdesk for assistance.",
+    "mfa_contact_helpdesk": "Contact Helpdesk",
+    "mfa_fresh_auth_required": "Note: You will be redirected to start the MFA reset process again.",
+    "cancelled_message": "Ok. Retry when you are ready. You can close this window.",
+    "dialog_send_password": {
+      "title": "Send temporary password",
+      "body": "We will now send a temporary password by SMS to <strong>{phone}</strong>.",
+      "confirm": "Send SMS"
+    },
+    "phone_missing_title": "Missing phonenumber",
+    "phone_missing_explanation": "We did not find any number at Kontakt- og Reservasjons-registeret (KRR).<br><br>Please update at KRR, use the \"Update source\" to get to the page.<br><br><strong>After updating your phone - start over again.</strong>",
+    "reference_id": "Reference ID"
+  },
+  "errors": {
+    "offline": "You are offline. Please check your connection.",
+    "network": "Network error. Please try again.",
+    "too_many_requests": "Too many requests. Please wait and try again.",
+    "bad_request": "There is a problem with the information provided.",
+    "unauthorized": "Your session has expired. Please start again.",
+    "forbidden": "You do not have permission to continue.",
+    "not_found": "We could not find what you requested.",
+    "conflict": "This action could not be completed because of a conflict.",
+    "server_issue": "We have a temporary issue. Please try again later.",
+    "generic": "Something went wrong. Please try again.",
+    "krr_not_found": "Mobile number not found in KRR. Please try again or contact support.",
+    "krr_service_error": "Temporary error with phone number service. Please try again.",
+    "krr_timeout": "Phone number service is taking too long to respond. Please try again.",
+    "krr_permission": "No access to phone number service. Please try again or contact support.",
+    "sms_timeout": "SMS sending took too long. Please try again.",
+    "sms_failed": "Could not send SMS. Please try again.",
+    "verification_timeout": "Verification took too long. Please try again."
+  },
+  "resetpassord": {
+    "need_help": "Need help?",
+    "back_to_home": "Back to home"
+  },
+  "passwordVerification": {
+    "title": "Verify and Set Your Password",
+    "info": "Enter the temporary password you received via SMS, then create your own secure password.",
+    "tempPasswordLabel": "Temporary Password (from SMS)",
+    "newPasswordLabel": "New Password",
+    "confirmPasswordLabel": "Confirm New Password",
+    "requirementsTitle": "Password must contain:",
+    "minLength": "At least 12 characters",
+    "lowercase": "Lowercase letter (a-z)",
+    "uppercase": "Uppercase letter (A-Z)",
+    "number": "Number (0-9)",
+    "specialChar": "Special character (!@#$%^&*)",
+    "noCommonWords": "No common or obvious words",
+    "backendValidationNote": "Your password will also be checked for common words, patterns, and sequences when you submit.",
+    "passwordsMatch": "✓ Passwords match",
+    "passwordsDoNotMatch": "Passwords do not match",
+    "submitButton": "Set Password",
+    "submitting": "Setting Password...",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "errors": {
+      "session_expired": "Your session has expired. Please restart the process.",
+      "invalid_temp_password": "Invalid temporary password. {attemptsLeft} attempts remaining.",
+      "max_attempts_exceeded": "Too many failed attempts. Please restart the process.",
+      "password_requirements_not_met": "Password does not meet security requirements. Please choose a stronger password.",
+      "password_cannot_match_temp": "New password cannot be the same as temporary password.",
+      "password_set_failed": "Failed to set password. Please try again.",
+      "missing_fields": "Please fill in all fields.",
+      "passwords_must_match": "Passwords must match.",
+      "common_password": "This password does not meet security requirements. Please choose a stronger password.",
+      "sequential_numbers": "This password does not meet security requirements. Please choose a stronger password.",
+      "repeated_characters": "This password does not meet security requirements. Please choose a stronger password."
+    }
+  },
+  "debug": {
+    "tabTitle": "Debug Log",
+    "loading": "Loading logs",
+    "error": "Error loading logs",
+    "tryAgain": "Try again",
+    "searchPlaceholder": "Search for correlation ID, user, message...",
+    "logs": "logs",
+    "resultCount": "{count} / {total} {label}",
+    "tableTimestamp": "Timestamp",
+    "tableCorrelation": "Correlation ID",
+    "tableLevel": "Level",
+    "tableMessage": "Message",
+    "noLogs": "No logs found",
+    "levelInfo": "Info",
+    "levelWarn": "Warning",
+    "levelError": "Error",
+    "timestamp": "Timestamp",
+    "correlationId": "Correlation ID",
+    "level": "Level",
+    "user": "User",
+    "message": "Message"
+  },
+  "stats": {
+    "tabTitle": "Statistics",
+    "loading": "Loading statistics",
+    "error": "Error loading statistics",
+    "tryAgain": "Try again",
+    "noData": "No data available",
+    "noDataMessage": "There are no verified accounts to display yet.",
+    "downloadCsv": "Download CSV file",
+    "showingResults": "Showing only 200 records",
+    "limitedDisplay": "(limited to {limit} for display - download CSV for all)",
+    "filterAll": "All",
+    "filterStudent": "Student",
+    "filterEmployee": "Employee",
+    "filterAllFlows": "All flows",
+    "filterNewAccount": "New account",
+    "filterExistingAccount": "Existing account",
+    "chartAccountType": "Account type",
+    "chartDepartment": "Department - Top 10",
+    "chartCompany": "Company - Top 10",
+    "chartTimeline": "Count over time (60 days)",
+    "tableDate": "Date",
+    "tableAccountType": "Account type",
+    "tableFlow": "Flow",
+    "tableCompany": "Company",
+    "tableDepartment": "Department",
+    "tableStatus": "Status",
+    "tableIdPorten": "ID-porten",
+    "flowNew": "New",
+    "flowExisting": "Existing",
+    "unknownValue": "Unknown",
+    "accountCount": "Count"
+  },
+  "common": {
+    "error": "Oops, something went wrong 😩",
+    "backToAdmin": "Back to admin"
+  },
+  "entravalidationcallback": {
+    "redirecting": "Redirecting ... please wait ..."
+  }
+}
